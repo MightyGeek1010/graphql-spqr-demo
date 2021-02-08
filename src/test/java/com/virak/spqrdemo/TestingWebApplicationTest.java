@@ -13,7 +13,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 
 @SpringBootTest
-@AutoConfigureMockMvc
+@AutoConfigureMockMvc //for testing the full Spring application context without the server
 public class TestingWebApplicationTest {
 
     @Autowired
