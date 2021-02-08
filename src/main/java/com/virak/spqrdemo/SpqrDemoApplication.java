@@ -15,16 +15,16 @@ public class SpqrDemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpqrDemoApplication.class, args);
 	}
-	@Bean
-	ApplicationRunner init(FoodService foodService) {
-		return args -> {
-			Stream.of("Pizza", "Spam", "Eggs", "Avocado").forEach(name -> {
-				Food food = new Food();
-				food.setName(name);
-				foodService.saveFood(food);
-			});
-			foodService.getFoods().forEach(System.out::println);
-		};
-	}
+//	@Bean
+//	ApplicationRunner init(FoodService foodService) {
+//		return args -> {
+//			Stream.of("Pizza", "Spam", "Eggs", "Avocado").forEach(name -> {
+//				Food food = new Food();
+//				food.setName(name);
+//				foodService.saveFood(food);
+//			});
+//			foodService.getFoods().forEach(System.out::println);
+//		};
+//	}
 
 }
